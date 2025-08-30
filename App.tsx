@@ -45,9 +45,9 @@ const App: React.FC = () => {
       company: 'Manipal Institute of Technology',
       duration: 'Aug 2025 - Present',
       description: [
-        "Promoted Perplexity's AI search product on campus through marketing and outreach.",
-        "Organized 5+ events, reaching 500+ students, and built a community around AI ethics.",
-        "Collaborated with cross-functional student teams, demonstrating teamwork and communication."
+        "Will lead campus-wide marketing and outreach initiatives to drive adoption of Perplexity's AI search product.",
+        "Tasked with organizing engaging events to build a vibrant student community around AI and technology.",
+        "Will collaborate with diverse student teams to execute campaigns, fostering leadership and communication skills."
       ],
       tags: ['Marketing', 'Community Building', 'AI Ethics', 'Outreach']
     },
