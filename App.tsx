@@ -94,9 +94,9 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-900 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-900">
       <Header />
-      <main className="container mx-auto px-6 md:px-12 relative z-10">
+      <main className="container mx-auto px-6 md:px-12">
         <Hero />
         <About />
         <Skills skillsData={technicalSkillsData} title="Technical Skills" id="skills" />
