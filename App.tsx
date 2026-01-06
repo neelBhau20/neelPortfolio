@@ -10,12 +10,18 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  const skillsData: SkillCategory[] = [
+  const technicalSkillsData: SkillCategory[] = [
     { title: 'Languages', skills: [{ name: 'C' }, { name: 'Java' }, { name: 'SQL (MySQL)' }, { name: 'JavaScript' }, { name: 'HTML/CSS' }, { name: 'TypeScript' }, { name: 'Python' }] },
     { title: 'Frameworks', skills: [{ name: 'React' }, { name: 'Next.js' }, { name: 'Django' }, { name: 'Node.js' }, { name: 'Express.js' }] },
-    { title: 'Developer Tools', skills: [{ name: 'VS Code' }, { name: 'IntelliJ' }, { name: 'Google Apps Script' }, { name: 'Figma' }, { name: 'Web3Forms' }, { name: 'Firebase (Auth, Firestore)' }, { name: 'Vercel' }, { name: 'Tailwind CSS' }] },
+    { title: 'Web & Tools', skills: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }, { name: 'React' }, { name: 'Firebase' }, { name: 'Google Apps Script' }, { name: 'Figma' }, { name: 'Web3Forms' }, { name: 'Vercel' }, { name: 'Tailwind CSS' }, { name: 'VS Code' }, { name: 'IntelliJ' }] },
+    { title: 'Analytics & Data', skills: [{ name: 'Marketing Analytics' }, { name: 'A/B Testing' }, { name: 'SQL' }, { name: 'Python (Pandas, NumPy, Matplotlib)' }, { name: 'PowerBI' }] },
     { title: 'Libraries', skills: [{ name: 'Pandas' }, { name: 'NumPy' }, { name: 'Matplotlib' }, { name: 'PyTorch' }, { name: 'Hugging Face Transformers' }, { name: 'TensorFlow' }] },
     { title: 'Core Concepts', skills: [{ name: 'Data Structures & Algorithms' }, { name: 'OOP' }, { name: 'Operating Systems' }, { name: 'DBMS' }, { name: 'System Design (basic)' }] },
+  ];
+
+  const nonTechnicalSkillsData: SkillCategory[] = [
+    { title: 'Digital Marketing', skills: [{ name: 'SEO' }, { name: 'Email Marketing' }, { name: 'Social Media Strategy' }, { name: 'Google Analytics' }, { name: 'Mailchimp' }, { name: 'Sender.net' }] },
+    { title: 'Strategy & Other', skills: [{ name: 'Content Strategy' }, { name: 'Brand Engagement' }, { name: 'Marketing Automation' }] },
   ];
 
   const projectsData: Project[] = [
@@ -41,13 +47,23 @@ const App: React.FC = () => {
 
   const experienceData: Experience[] = [
     {
+      role: 'Brand Marketing Intern',
+      company: 'Groww',
+      duration: 'Dec 2025 - Present',
+      description: [
+        "Developed and conceptualized novel campaign ideas to enhance company branding.",
+        "Executing a large-scale campaign drive which will target various colleges across India."
+      ],
+      tags: ['Brand Marketing', 'Campaign Strategy', 'Outreach']
+    },
+    {
       role: 'Perplexity Campus Ambassador',
       company: 'Manipal Institute of Technology',
-      duration: 'Aug 2025 - Present',
+      duration: 'Aug 2025 - Dec 2025',
       description: [
-        "Will lead campus-wide marketing and outreach initiatives to drive adoption of Perplexity's AI search product.",
-        "Tasked with organizing engaging events to build a vibrant student community around AI and technology.",
-        "Will collaborate with diverse student teams to execute campaigns, fostering leadership and communication skills."
+        "Promoted Perplexity's AI search product on campus through marketing and outreach.",
+        "Organized 5+ events, reaching 500+ students, and built a community around AI ethics.",
+        "Collaborated with cross-functional student teams, demonstrating teamwork and communication."
       ],
       tags: ['Marketing', 'Community Building', 'AI Ethics', 'Outreach']
     },
@@ -83,7 +99,8 @@ const App: React.FC = () => {
       <main className="container mx-auto px-6 md:px-12">
         <Hero />
         <About />
-        <Skills skillsData={skillsData} />
+        <Skills skillsData={technicalSkillsData} title="Technical Skills" id="skills" />
+        <Skills skillsData={nonTechnicalSkillsData} title="Non-Technical Skills" id="non-technical-skills" />
         <ExperienceComponent experienceData={experienceData} />
         <Projects projectsData={projectsData} />
         <Contact />

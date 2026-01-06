@@ -39,8 +39,8 @@ const Header: React.FC = () => {
 
   const handleConfirmDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Neel_Tambe_Resume.pdf';
-    link.download = 'Neel_Tambe_Resume.pdf';
+    link.href = '/Neel Resume for marketing.pdf';
+    link.download = '/Neel Resume for marketing.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

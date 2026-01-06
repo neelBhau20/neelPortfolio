@@ -15,8 +15,8 @@ const Contact: React.FC = () => {
       </AnimatedSection>
       <AnimatedSection className="delay-200">
         <a 
-          href="/Neel_Tambe_Resume.pdf" 
-          download="Neel_Tambe_Resume.pdf"
+          href="/Neel Resume for marketing.pdf" 
+          download="/Neel Resume for marketing.pdf"
           className="inline-block px-6 py-3 bg-emerald-500 text-slate-900 font-bold rounded-lg hover:bg-emerald-400 transition-all duration-300 glow-on-hover mb-12"
         >
           Download My Resume

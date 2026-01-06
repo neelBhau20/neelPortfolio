@@ -4,13 +4,15 @@ import AnimatedSection from './AnimatedSection';
 
 interface SkillsProps {
   skillsData: SkillCategory[];
+  title?: string;
+  id?: string;
 }
 
-const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
+const Skills: React.FC<SkillsProps> = ({ skillsData, title = "Technical Skills", id = "skills" }) => {
   return (
-    <section id="skills" className="py-24">
+    <section id={id} className="py-12">
       <AnimatedSection>
-        <h2 className="text-4xl font-bold text-center mb-12 text-white">Technical Skills</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-white">{title}</h2>
       </AnimatedSection>
       <div className="space-y-8">
         {skillsData.map((category) => (
