@@ -10,12 +10,12 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="py-12 border-t border-slate-800 bg-slate-900 relative z-20">
+    <footer className="py-16 border-t border-slate-800 bg-slate-900 relative z-20">
       <div className="container mx-auto text-center px-4">
         <a 
           href="#home" 
           onClick={handleScrollToTop}
-          className="text-2xl font-bold text-emerald-400 hover:text-emerald-300 transition-all duration-300 cursor-pointer text-glow-on-hover inline-block transform hover:scale-105"
+          className="text-3xl font-bold text-emerald-400 hover:text-emerald-300 transition-all duration-300 cursor-pointer text-glow-on-hover inline-block transform hover:scale-110"
         >
           Neel Tambe
         </a>
