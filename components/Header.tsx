@@ -23,7 +23,6 @@ const Header: React.FC = () => {
     e.preventDefault();
     const element = document.querySelector(targetId);
     if (element) {
-      // The offset is to account for the fixed header
       const yOffset = -80; 
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({top: y, behavior: 'smooth'});
@@ -33,7 +32,7 @@ const Header: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/80 shadow-lg backdrop-blur-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto flex justify-between items-center p-4">
-        <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="text-2xl font-bold text-emerald-400 hover:text-emerald-300 transition-all duration-300 text-glow-on-hover transform hover:scale-110">
+        <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="text-2xl font-bold text-emerald-400 hover:text-emerald-300 transition-all duration-300 text-glow-on-hover transform hover:scale-110">
           NT
         </a>
         <nav className="hidden md:flex space-x-6">
@@ -44,7 +43,7 @@ const Header: React.FC = () => {
           ))}
         </nav>
         <a 
-          href="./Neel_Tambe_Resume.pdf" 
+          href="/Neel_Tambe_Resume.pdf" 
           download="Neel_Tambe_Resume.pdf"
           className="px-4 py-2 border border-emerald-400 text-emerald-400 rounded-md hover:bg-emerald-400 hover:text-slate-900 font-semibold transition-all duration-300 glow-on-hover"
         >
