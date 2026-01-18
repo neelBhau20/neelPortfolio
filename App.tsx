@@ -11,36 +11,55 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const technicalSkillsData: SkillCategory[] = [
-    { title: 'Languages', skills: [{ name: 'C' }, { name: 'Java' }, { name: 'SQL (MySQL)' }, { name: 'JavaScript' }, { name: 'HTML/CSS' }, { name: 'TypeScript' }, { name: 'Python' }] },
-    { title: 'Frameworks', skills: [{ name: 'React' }, { name: 'Next.js' }, { name: 'Django' }, { name: 'Node.js' }, { name: 'Express.js' }] },
-    { title: 'Web & Tools', skills: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }, { name: 'React' }, { name: 'Firebase' }, { name: 'Google Apps Script' }, { name: 'Figma' }, { name: 'Web3Forms' }] },
-    { title: 'Analytics & Data', skills: [{ name: 'Marketing Analytics' }, { name: 'A/B Testing' }, { name: 'SQL' }, { name: 'Python (Pandas, NumPy, Matplotlib)' }, { name: 'PowerBI' }] },
-    { title: 'Libraries', skills: [{ name: 'Pandas' }, { name: 'NumPy' }, { name: 'Matplotlib' }, { name: 'PyTorch' }, { name: 'Hugging Face Transformers' }, { name: 'TensorFlow' }] },
-    { title: 'Core Concepts', skills: [{ name: 'Data Structures & Algorithms' }, { name: 'OOP' }, { name: 'Operating Systems' }, { name: 'DBMS' }, { name: 'System Design (basic)' }] },
+    { 
+      title: 'Data & Analytics', 
+      skills: [
+        { name: 'SQL (Advanced)' }, 
+        { name: 'Python (Pandas, NumPy, Matplotlib)' }, 
+        { name: 'Excel (Pivot Tables, VLOOKUP)' },
+        { name: 'PowerBI' }, 
+        { name: 'Statistical Analysis' },
+        { name: 'A/B Testing' }, 
+        { name: 'Google Analytics' }
+      ] 
+    },
+    { 
+      title: 'Marketing Fusion', 
+      skills: [
+        { name: 'Email Marketing' },
+        { name: 'Marketing Automation' },
+        { name: 'SEO Strategy' },
+        { name: 'Brand Analytics' },
+        { name: 'Performance Marketing' },
+        { name: 'Content Strategy' }
+      ] 
+    },
+    { title: 'Core Tech', skills: [{ name: 'Python' }, { name: 'JavaScript' }, { name: 'React' }, { name: 'Django' }, { name: 'Java' }, { name: 'C' }, { name: 'DBMS' }] },
+    { title: 'Libraries & ML', skills: [{ name: 'Scikit-Learn' }, { name: 'PyTorch' }, { name: 'Hugging Face' }, { name: 'NumPy' }] },
   ];
 
   const nonTechnicalSkillsData: SkillCategory[] = [
-    { title: 'Digital Marketing', skills: [{ name: 'SEO' }, { name: 'Email Marketing' }, { name: 'Social Media Strategy' }, { name: 'Google Analytics' }, { name: 'Mailchimp' }, { name: 'Sender.net' }] },
-    { title: 'Other', skills: [{ name: 'Content Strategy' }, { name: 'Brand Engagement' }, { name: 'Marketing Automation' }] },
+    { title: 'Strategic Tools', skills: [{ name: 'Figma' }, { name: 'Mailchimp' }, { name: 'Web3Forms' }, { name: 'Google Apps Script' }] },
+    { title: 'Soft Skills', skills: [{ name: 'Data Storytelling' }, { name: 'Community Leadership' }, { name: 'Agile Mindset' }] },
   ];
 
   const projectsData: Project[] = [
     {
       title: 'Student Database Management System',
-      description: 'A robust Django-based platform for efficient management of student records and analytics, featuring CRUD operations, attendance tracking with report downloads, and a multi-user interface.',
-      tags: ['Django', 'Python'],
+      description: 'A robust Django-based platform for efficient management of student records and analytics. Implemented complex SQL queries for tracking attendance trends and generating performance reports.',
+      tags: ['Django', 'Python', 'SQL', 'Data Analytics'],
     },
     {
       title: 'LockerFox - Secure Password Manager',
-      description: 'A full-stack, secure web application with a zero-knowledge architecture. Features include a local password generator, end-to-end encryption, and secure data sharing functionality.',
-      tags: ['Next.js', 'TypeScript', 'React', 'Firebase', 'Vercel', 'Tailwind CSS'],
+      description: 'A full-stack, secure web application with zero-knowledge architecture. While a security project, it showcases my ability to manage structured user data securely.',
+      tags: ['Next.js', 'TypeScript', 'Firebase'],
       liveUrl: 'https://lockerfox-app.vercel.app',
       githubUrl: 'https://github.com/neelBhau20/LockerFox',
     },
     {
       title: 'Logistics Company B2B Website',
-      description: 'A responsive website for a logistics company supporting 100+ daily users, improving client onboarding by 40%. Features a dynamic contact form with automated data storage to Google Sheets.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'Web3Forms', 'Google Apps Script'],
+      description: 'Improved client onboarding by 40% through data-driven UI optimizations. Features automated data capture into Google Sheets for lead analysis.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Web3Forms', 'Google Sheets API'],
       liveUrl: 'https://sendit.co.in',
     },
   ];
@@ -51,7 +70,7 @@ const App: React.FC = () => {
       company: 'Groww',
       duration: 'Dec 2025 – Present',
       description: [
-        "Developed and conceptualized novel campaign ideas to enhance company branding.",
+        "Developing and conceptualizing novel campaign ideas to enhance company branding.",
         "Executing a large-scale campaign drive which will target various colleges across India."
       ],
       tags: ['Brand Marketing', 'Campaign Strategy', 'Outreach']
@@ -94,13 +113,13 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-slate-900 overflow-x-hidden">
       <Header />
-      <main className="container mx-auto px-6 md:px-12">
+      <main className="container mx-auto px-6 md:px-12 relative z-10">
         <Hero />
         <About />
-        <Skills skillsData={technicalSkillsData} title="Technical Skills" id="skills" />
-        <Skills skillsData={nonTechnicalSkillsData} title="Non-Technical Skills" id="non-technical-skills" />
+        <Skills skillsData={technicalSkillsData} title="Technical Expertise" id="skills" />
+        <Skills skillsData={nonTechnicalSkillsData} title="Strategic & Soft Skills" id="non-technical-skills" />
         <ExperienceComponent experienceData={experienceData} />
         <Projects projectsData={projectsData} />
         <Contact />

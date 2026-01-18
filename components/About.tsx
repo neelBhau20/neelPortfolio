@@ -12,21 +12,27 @@ const About: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-12">
         <AnimatedSection initialClass="opacity-0 -translate-x-10" finalClass="opacity-100 translate-x-0">
           <div className="bg-slate-800 p-8 rounded-lg border border-slate-700 glow-on-hover transition-shadow duration-300 h-full">
-            <h3 className="text-2xl font-bold text-emerald-400 mb-4">Personal Philosophy & Approach</h3>
+            <h3 className="text-2xl font-bold text-emerald-400 mb-4">Marketing-Data Synergy</h3>
+            <p className="text-gray-400 mb-6">
+              I don't just see numbers; I see patterns of human behavior. To me, data and marketing go hand-in-hand. My goal is to master this fusion, using technical precision to guide creative strategy.
+            </p>
             <ul className="space-y-3 text-gray-400">
-              <li><strong className="text-gray-200">Proactive & Self-Driven:</strong> Actively seeking mentors and building a strong portfolio to overcome challenges and achieve goals.</li>
-              <li><strong className="text-gray-200">Practical Learner:</strong> Passionate about hands-on application and building real-world projects to solidify theoretical concepts.</li>
-              <li><strong className="text-gray-200">Balanced Skill Set:</strong> A unique blend of technical expertise in software development and non-technical skills in digital marketing and community leadership.</li>
+              <li><strong className="text-gray-200">The Fusion:</strong> Data provides the "what" and marketing provides the "why". I bridge that gap.</li>
+              <li><strong className="text-gray-200">Analytical Storytelling:</strong> Transforming raw SQL outputs into compelling growth narratives.</li>
+              <li><strong className="text-gray-200">Cross-Disciplinary:</strong> Applying Computer Science fundamentals to solve complex marketing challenges.</li>
             </ul>
           </div>
         </AnimatedSection>
         <AnimatedSection initialClass="opacity-0 translate-x-10" finalClass="opacity-100 translate-x-0">
           <div className="bg-slate-800 p-8 rounded-lg border border-slate-700 glow-on-hover transition-shadow duration-300 h-full">
-            <h3 className="text-2xl font-bold text-emerald-400 mb-4">Career Trajectory & Goals</h3>
+            <h3 className="text-2xl font-bold text-emerald-400 mb-4">Career Vision</h3>
+            <p className="text-gray-400 mb-6">
+              Currently deep-diving into the world of Data Analytics, I am focusing on building a robust toolkit that serves the modern digital ecosystem.
+            </p>
             <ul className="space-y-3 text-gray-400">
-               <li><strong className="text-gray-200">Aspiring Software Engineer:</strong> Aiming for a challenging software engineer role with a target package of 16 LPA.</li>
-               <li><strong className="text-gray-200">Strategic Preparation:</strong> Following a clear roadmap for interview preparation, starting in December 2025 for placements in August 2026.</li>
-               <li><strong className="text-gray-200">Effective Networking:</strong> Leveraging connections and seeking advice from experienced seniors to navigate the tech industry successfully.</li>
+               <li><strong className="text-gray-200">Aspiring Data Analyst:</strong> Targeting roles that demand both technical rigor and strategic intuition.</li>
+               <li><strong className="text-gray-200">Strategic Milestone:</strong> Successfully mastered SQL and moving into advanced statistical modeling.</li>
+               <li><strong className="text-gray-200">Continuous Growth:</strong> Dedicated to learning how modern AI models can revolutionize consumer engagement.</li>
             </ul>
           </div>
         </AnimatedSection>

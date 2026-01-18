@@ -46,30 +46,30 @@ const Hero: React.FC = () => {
       
       <div className="relative z-10">
         <AnimatedSection className="delay-100">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
             Neel Tambe
           </h1>
         </AnimatedSection>
         <AnimatedSection className="delay-200">
           <h2 className="text-3xl md:text-5xl font-bold text-emerald-400 mb-2 text-glow">
-            Aspiring Software Engineer
+            Aspiring Data Analyst
           </h2>
         </AnimatedSection>
         <AnimatedSection className="delay-300">
           <h3 className="text-2xl md:text-4xl font-semibold text-gray-400 mb-6">
-            Fusing{' '}
+            Orchestrating{' '}
             <span className="font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
-              Code
+              Marketing Fusion
             </span>{' '}
-            with{' '}
+            through{' '}
             <span className="font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
-              Creative Marketing
+              Data Excellence
             </span>
           </h3>
         </AnimatedSection>
         <AnimatedSection className="delay-400">
           <p className="max-w-2xl text-lg text-gray-400 mb-8">
-            Computer Science undergrad specializing in full-stack development and AI/ML, with experience in building secure, scalable web apps and improving product engagement through data-driven decisions.
+            Computer Science student specializing in the intersection of data science and digital marketing. I leverage SQL, Python, and Excel to uncover insights that fuel strategic brand growth, believing that marketing strategy and analytical insights are inseparable forces for impact.
           </p>
         </AnimatedSection>
         <AnimatedSection className="delay-500">
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
           </div>
         </AnimatedSection>
         <AnimatedSection className="delay-600">
-          <a href="#projects" onClick={(e) => handleNavClick(e, '#projects')} className="px-6 py-3 bg-emerald-500 text-slate-900 font-bold rounded-lg hover:bg-emerald-400 transition-all duration-300 glow-on-hover">
+          <a href="#projects" onClick={(e) => handleNavClick(e, '#projects')} className="px-8 py-4 bg-emerald-500 text-slate-900 font-bold rounded-lg hover:bg-emerald-400 transition-all duration-300 glow-on-hover text-lg">
             View My Work
           </a>
         </AnimatedSection>
