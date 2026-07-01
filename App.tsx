@@ -66,12 +66,23 @@ const App: React.FC = () => {
 
   const experienceData: Experience[] = [
     {
+      role: 'Program Management Intern',
+      company: 'Leap',
+      duration: 'Jul 2026 – Present',
+      description: [
+        "Managing cross-functional marketing campaigns and tracking performance metrics to optimize conversion rates and outreach efficiency.",
+        "Analyzing brand engagement and user acquisition data to derive actionable insights for strategic decision-making and campaign scaling.",
+        "Developing program dashboards using data visualization techniques to report key metrics and campaign ROI to leadership teams."
+      ],
+      tags: ['Marketing Analysis', 'Data Analytics', 'Program Management', 'Campaign Tracking', 'Data Storytelling']
+    },
+    {
       role: 'Brand Marketing Intern',
       company: 'Groww',
-      duration: 'Dec 2025 – Present',
+      duration: 'Dec 2025 – Feb 2026',
       description: [
-        "Developing and conceptualizing novel campaign ideas to enhance company branding.",
-        "Executing a large-scale campaign drive which will target various colleges across India."
+        "Developed and conceptualized novel campaign ideas to enhance company branding.",
+        "Executed a large-scale campaign drive which targeted various colleges across India."
       ],
       tags: ['Brand Marketing', 'Campaign Strategy', 'Outreach']
     },
